@@ -24,37 +24,37 @@ echo "
 <!doctype html>
 <html lang="en" class="h-100">
 <head>
-  <title>Details for EC2 instance</title>
-  <style>
-    body {
-      background-image: url('https://img.freepik.com/premium-photo/flag-wallpaper-brazil_670382-35283.jpg');
-      background-size: cover;
-    }
-  </style>
+<title>Details for EC2 instance</title>
+<style>
+body {
+background-image: url('https://img.freepik.com/premium-photo/flag-wallpaper-brazil_670382-35283.jpg');
+background-size: cover;
+}
+</style>
 </head>
 <body>
-  <div>
-    <font color="ffffff">
-    <h1><center>AWS Instance Details</center></h1>
-    <h1><center>Theo's Brazilian Blondes</center></h1>
-    </font>
-    <br>
-    <table style="width: 100%; border-collapse: collapse;">
-      <tr style="width: 50%; text-align: center;">
-          <img src="https://www.sanclerfrantz.com.br/extranet/gallery/50.jpg" alt="Samurai Katana" width="100%" height="100%">
-      </tr>
-      <tr style="width: 50%; text-align: center;">
-          <img src="https://scontent.fsan1-1.fna.fbcdn.net/v/t39.30808-6/328456164_697059261894340_7180712376624252623_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Iio4KNOPA3QQ7kNvgGXYXGI&_nc_zt=23&_nc_ht=scontent.fsan1-1.fna&_nc_gid=AI5_14qHWXeNVW047eG1xtk&oh=00_AYChVyqcisdd6oYDI9nFKMxmhcrAmNP30bpahQ5l7H2gig&oe=672A6B15" alt="Additional Image" width="100%" height="100%">
-      </tr>
-    </table>
-    <br>
-    <font color="ffffff" size="5">
-    <p><b>Instance Name:</b> $(hostname -f)</p>
-    <p><b>Instance Private Ip Address:</b> ${local_ipv4}</p>
-    <p><b>Availability Zone:</b> ${az}</p>
-    <p><b>Virtual Private Cloud (VPC):</b> ${vpc}</p>
-    </font>
-  </div>
+<div>
+<font color="ffffff">
+<h1><center>AWS Instance Details</center></h1>
+<h1><center>Theo's Brazilian Blondes</center></h1>
+</font>
+<br>
+<table style="width: 100%; border-collapse: collapse;">
+<tr style="width: 50%; text-align: center;">
+<img src="https://www.sanclerfrantz.com.br/extranet/gallery/50.jpg" alt="Samurai Katana" width="100%" height="100%">
+</tr>
+<tr style="width: 50%; text-align: center;">
+<img src="https://scontent.fsan1-1.fna.fbcdn.net/v/t39.30808-6/328456164_697059261894340_7180712376624252623_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Iio4KNOPA3QQ7kNvgGXYXGI&_nc_zt=23&_nc_ht=scontent.fsan1-1.fna&_nc_gid=AI5_14qHWXeNVW047eG1xtk&oh=00_AYChVyqcisdd6oYDI9nFKMxmhcrAmNP30bpahQ5l7H2gig&oe=672A6B15" alt="Additional Image" width="100%" height="100%">
+</tr>
+</table>
+<br>
+<font color="ffffff" size="5">
+<p><b>Instance Name:</b> $(hostname -f)</p>
+<p><b>Instance Private Ip Address:</b> ${local_ipv4}</p>
+<p><b>Availability Zone:</b> ${az}</p>
+<p><b>Virtual Private Cloud (VPC):</b> ${vpc}</p>
+</font>
+</div>
 </body>
 </html>
 " > /var/www/html/index.html
